@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+
+<html lang="en" >
+
+    <head>
+      <meta charset="UFT-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+			<title>Domestika</title>
+			<!-- from google fonts website-->
+      <link rel="preconnect" href="https://fonts.googleapis.com"> 
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+      <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+  
+      <link href="domestika.css" rel="stylesheet"/>
+      
+      <link href="domestikalook.css" rel="stylesheet"/>     
+      <h1>Domestika Card game</h1>
+    </head>
+
+    <!--stopwatch-->
+    
+
+    <body>
+      <header class="header-item" >
+        <!--moves-->
+      <div class="movecounter">
+        <div class="header-item">
+          <h4 class="header-title"> Moves: </h4>
+          <div class="header-number">
+            <span id="moves">00</span>/<span id="moves-total">20</span>
+          </div>
+        </div>
+      </div>
+      <!--stopwatch-->
+      <div class="timecounter">
+        <div class="header-item">
+          <h4 class="header-title"> Time: </h4>
+          <div class="header-number">
+            <span id="minutes">00</span>:<span id="seconds">00</span>
+          </div>
+        </div>
+      </div>
+      </header>
+
+
+    <main>
+      <div id="GameTable" class="GameTable">  </div>
+        <div id="feedback" class="feedback">
+          <div class="module">
+            <h2>Well done!</h2>
+            <button id="replay" class="replay">Replay?</button>
+          </div>
+        </div>   
+    </main>
+      
+      
+
+        <!-- scriptsource -->
+      <script src="js/globalVariables.js"></script> 
+      <script src="js/cardDistribution.js"></script> 
+      <script src="js/discoverCompare.js"></script>
+      <script src="js/correctIncorrect.js"></script> 
+      <script src="js/stopwatch.js"></script> 
+      <script src="js/movecounter.js"></script>
+      <script src="js/FinishGame.js"></script>
+      <script  src="js/start.js"></script> 
+      
+    </body>
+</html>
