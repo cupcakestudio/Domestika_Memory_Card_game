@@ -1,11 +1,13 @@
 //after gameplay finishes
 function startGame() {
-  moves = 0;
-  dealsCard(); 
+  moves = 0; 
+  dealsCard(level[actualLevel].decklevel); //level of decks
 
   document.querySelector("#moves").innerHTML = "00"
-  //hide the feedback finishGame layer
-  document.querySelector("#feedback").classList.remove("visible");
+  //hide the diff screen layers when (re)start
+  document.querySelector("#levels").classList.remove("visible");
+  document.querySelector("#gameOver").classList.remove("visible");
+  document.querySelector("#gameEnd").classList.remove("visible");
   //flip the cards
  
   document.querySelectorAll(".Card").forEach(
@@ -18,4 +20,4 @@ function startGame() {
 }
 startGame();
 
-document.querySelector("#replay").addEventListener("click", startGame);
+document.querySelectorAll(".replay").forEach(function(element) {element.addEventListener("click", startGame)});

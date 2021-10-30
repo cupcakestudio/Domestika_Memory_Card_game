@@ -1,3 +1,18 @@
 var moves = 0;
-var groupCard1 = ["e", "w", "r", "e", "q",];
-var totalCards = groupCard1.concat(groupCard1);
+var deck = [["e" , "w"], ["r", "e"], ["q","i"]];
+
+var actualLevel = 0;
+var level = [
+  {
+    decklevel: deck[0]
+    
+  }, 
+  
+  {
+    decklevel: deck[0].concat(deck[1])
+  },
+  {
+    decklevel: deck[0].concat(deck[1],deck[2])
+  }
+
+];

@@ -44,13 +44,37 @@
 
 
     <main>
-      <div id="GameTable" class="GameTable">  </div>
-        <div id="feedback" class="feedback">
-          <div class="module">
-            <h2>Well done!</h2>
-            <button id="replay" class="replay">Replay?</button>
+        
+      <div id="GameTable" class="GameTable">
+         <div class="Card">
+          <div class="Card_contents"> </div>
+        </div>  
+      </div>
+      <!--Levels screen-->
+
+      <div id="levels" class="levels">
+          <div class="module"> 
+            <h2>Choose your level:</h2>
+            <button id="upload">Next Level</button>
+            <button class="replay">Replay Level</button>
           </div>
-        </div>   
+      </div>
+      <!-- game over screen-->
+      <div id="gameOver" class="game-over">
+          <div class="module">
+            <h2>Oh no!</h2>
+            <p>Would you like to try again?</p>
+            <button class="replay">Try again?</button>
+          </div>
+      </div> 
+      <!-- game finished / cleared-->
+      <div id="gameEnd" class="game-end">
+        <div class="module">
+          <h2>Congratulations!</h2>
+          <p>Would you like to try again?</p>
+          <button class="replay">Try again?</button>
+        </div>
+    </div> 
     </main>
       
       

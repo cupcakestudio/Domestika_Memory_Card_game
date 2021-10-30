@@ -1,5 +1,8 @@
-function shuffleCard(){
+function shuffleCard(theseCards){
   var result;
+  var totalCards = theseCards.concat(theseCards);
+  console.log(totalCards);
+ 
    //randomize number so generated a number 0-10 rounded down
   //randomize the deck by sort array
   result = totalCards.sort(function() { //returns a random number 
@@ -9,12 +12,12 @@ function shuffleCard(){
   return result;
 }
 
-function dealsCard(){
+function dealsCard(theseCards){
 
   var table = document.querySelector("#GameTable");
   table.innerHTML = "";
   //paint the table with diff values from array
-  var shuffledCardsBase = shuffleCard(); //each shuffled carddeck replaces old deck
+  var shuffledCardsBase = shuffleCard(theseCards); //each shuffled carddeck replaces old deck
 
   shuffledCardsBase.forEach(
   //anonym function

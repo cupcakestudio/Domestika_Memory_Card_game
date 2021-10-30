@@ -1,3 +1,3 @@
 function finishGame() {
-  document.querySelector("#feedback").classList.add("visible");
+  document.querySelector("#gameEnd").classList.add("visible");
 }
