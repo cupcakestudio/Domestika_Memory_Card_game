@@ -1,7 +1,6 @@
 function shuffleCard(theseCards){
   var result;
   var totalCards = theseCards.concat(theseCards);
-  console.log(totalCards);
  
    //randomize number so generated a number 0-10 rounded down
   //randomize the deck by sort array

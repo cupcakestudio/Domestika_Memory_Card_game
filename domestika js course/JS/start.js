@@ -1,7 +1,7 @@
 //after gameplay finishes
 function startGame() {
   moves = 0; 
-  dealsCard(level[actualLevel].decklevel); //level of decks
+  dealsCard(level[actualLevel].decklevel); //deck levels
 
   document.querySelector("#moves").innerHTML = "00"
   //hide the diff screen layers when (re)start
@@ -21,3 +21,4 @@ function startGame() {
 startGame();
 
 document.querySelectorAll(".replay").forEach(function(element) {element.addEventListener("click", startGame)});
+document.querySelector("#upload").addEventListener("click",loadNewLevel);
