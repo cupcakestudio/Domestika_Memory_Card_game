@@ -21,6 +21,14 @@
     
 
     <body>
+      <!--welcome screen-->
+      <div id="welcome" class="welcome">
+        <h1>Welcome to the GAME</h1>
+        <div id="welcome-buttons">
+          <button id="relaxMode">Relax Mode</button>
+          <button id="normalGameMode">Normal Mode</button>
+        </div>
+      </div>
       <header class="header-item" >
         <!--moves-->
       <div class="movecounter">
@@ -82,7 +90,11 @@
         </div>
     </div> 
     </main>
-      
+     <div class="select-levels">
+       <button id="close-level-menu" class="close-level-menu">x</button>
+        <ul></ul>
+     </div> 
+
       <!--sound effects-->
       <audio
       src="SoundEffects/win.mp3"
@@ -119,7 +131,9 @@
       <script src="js/movecounter.js"></script>
       <script src="js/gameOver.js"></script>
       <script src="js/changeLevels.js"></script>
+      <script src="js/menuLevels.js"></script>
       <script src="js/FinishGame.js"></script>
+      <script src="js/startGameMode.js"></script>
       <script  src="js/start.js"></script> 
       
     </body>

@@ -6,8 +6,10 @@ function startGame() {
   document.querySelector("#moves").innerHTML = "00";
   maxMoveCounter();
   //hide the diff screen layers when (re)start
+  document.querySelector(".select-levels").classList.remove("visible");
   document.querySelector("#levels").classList.remove("visible");
   document.querySelector("#gameOver").classList.remove("visible");
+  document.querySelector(".timecounter").classList.remove("visible");
   document.querySelector("#gameEnd").classList.remove("visible");
   //flip the cards
  
@@ -16,7 +18,8 @@ function startGame() {
       element.addEventListener("click", discoverCard);
 
   });
-  //stopwatchStart();
+  if (!relaxMode) {stopwatchStart();}
+  else {document.querySelector(".timecounter").classList.add("stopwatch-hidden");}
   
 }
 //restart from beginning level - when finished a level
@@ -28,5 +31,16 @@ function replay() {
 
 startGame();
 
-document.querySelectorAll(".replay").forEach(function(element) {element.addEventListener("click", replay)});
-document.querySelector("#upload").addEventListener("click", loadNewLevel);
+//full game / hardcore start
+function normalGameModeStart(){
+  relaxMode = false;
+  document.querySelector("#welcome").classList.remove("visible");
+  startGame();
+  document.querySelector("#control-levels").classList.add("control-hidden");
+}
+//relax mode start
+function relaxModeStart(){
+  relaxMode = true;
+  document.querySelector("#welcome").classList.remove("visible");
+  startGame();
+}

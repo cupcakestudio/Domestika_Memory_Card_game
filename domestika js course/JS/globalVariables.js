@@ -1,4 +1,6 @@
+var relaxMode = false;
 var moves = 0;
+var stopwatch;
 var deck = [["e" , "w"], ["r", "e"], ["q","i"]];
 
 var actualLevel = 0;

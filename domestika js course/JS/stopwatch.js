@@ -3,7 +3,7 @@ function stopwatchStart(){
   var minutes = 0;
   var secondsText;
   var minutesText;
-  var stopwatch;
+ 
   function updateStopwatch()
   {
      
@@ -17,7 +17,8 @@ function stopwatchStart(){
       
       seconds = 0;
       minutes = 0;
-       clearInterval(stopwatch);
+      clearInterval(stopwatch);
+      timeEnd();
   }
     secondsText = seconds;
     minutesText = minutes;

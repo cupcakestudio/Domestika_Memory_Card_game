@@ -1,10 +1,9 @@
 function updateMoveCounter() {
-
   var movesText;
   moves++;
   movesText = moves;
 //check if moves are not exceeded otherwise, gameover.
-if (moves > level[actualLevel].maxMoves)
+if (moves > level[actualLevel].maxMoves && !relaxMode)
 {
   gameOver();
   return 
