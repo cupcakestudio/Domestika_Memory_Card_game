@@ -112,7 +112,7 @@ main {
   backface-visibility: hidden;
 }
 
-.levels,
+.Levels,
 .game-over,
 .game-end {
   display: none;
@@ -124,7 +124,7 @@ main {
   background-image: var(--gradient);
 }
 
-.levels.visible,
+.Levels.visible,
 .game-over.visible,
 .game-end.visible {
   display: flex;

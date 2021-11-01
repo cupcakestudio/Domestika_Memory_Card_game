@@ -3,7 +3,8 @@ function startGame() {
   moves = 0; 
   dealsCard(level[actualLevel].decklevel); //deck levels
 
-  document.querySelector("#moves").innerHTML = "00"
+  document.querySelector("#moves").innerHTML = "00";
+  maxMoveCounter();
   //hide the diff screen layers when (re)start
   document.querySelector("#levels").classList.remove("visible");
   document.querySelector("#gameOver").classList.remove("visible");
@@ -18,7 +19,14 @@ function startGame() {
   //stopwatchStart();
   
 }
+//restart from beginning level - when finished a level
+function replay() {
+  actualLevel = 0; //updates / resets to level 0
+  updateLevel();
+  startGame();
+}
+
 startGame();
 
-document.querySelectorAll(".replay").forEach(function(element) {element.addEventListener("click", startGame)});
-document.querySelector("#upload").addEventListener("click",loadNewLevel);
+document.querySelectorAll(".replay").forEach(function(element) {element.addEventListener("click", replay)});
+document.querySelector("#upload").addEventListener("click", loadNewLevel);
