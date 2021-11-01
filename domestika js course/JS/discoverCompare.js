@@ -9,7 +9,10 @@ function discoverCard(){
     return;
   }
   this.classList.add("Card_discover");
-
+  //add flipCard sound to ^ class
+  document.querySelector("#sound-flipCard").cloneNode().play();
+  //clodeNode() cheap trick to clone node in JS
+  
   //check the Cards value
   CardDiscovered = document.querySelectorAll(".Card_discover:not(.success)");
   if (CardDiscovered.length < 2 ) //length of cards less than 2
