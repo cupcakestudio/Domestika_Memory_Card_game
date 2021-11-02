@@ -9,7 +9,6 @@ function success(theseCards) {
   {
     element.classList.add("success");
   });
- document.querySelector("#sound-success").cloneNode().play();
 }
 
 function error(theseCards) {
@@ -17,7 +16,6 @@ function error(theseCards) {
   {
     element.classList.add("error");
   });
-  document.querySelector("#sound-error").cloneNode().play();
 
   setTimeout(function() {
     theseCards.forEach(function(element)
