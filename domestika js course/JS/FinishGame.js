@@ -4,5 +4,6 @@ function finishGame() {
   }
   else {
   document.querySelector("#gameEnd").classList.add("visible");
-  }
+  document.querySelector("#sound-finished").play();  
+}
 }

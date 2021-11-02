@@ -9,6 +9,7 @@ function discoverCard(){
     return;
   }
   this.classList.add("Card_discover");
+  document.querySelector("#sound-cardFlip").cloneNode().play();
 
   //check the Cards value
   CardDiscovered = document.querySelectorAll(".Card_discover:not(.success)");

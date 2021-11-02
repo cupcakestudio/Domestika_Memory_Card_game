@@ -21,15 +21,16 @@
     
 
     <body>
-      <!--welcome screen-->
+   <!--  <!--welcome screen-->
       <div id="welcome" class="welcome">
         <h1>Welcome to the GAME</h1>
         <div id="welcome-buttons">
           <button id="relaxMode">Relax Mode</button>
           <button id="normalGameMode">Normal Mode</button>
         </div>
-      </div>
+      </div> -->
       <header class="header-item" >
+      
         <!--moves-->
       <div class="movecounter">
         <div class="header-item">
@@ -97,16 +98,30 @@
 
       <!--sound effects-->
       <audio
-      src="SoundEffects/win.mp3"
+      src="sounds/win.mp3"
       class="sounds"
       id="sound-success"
       preload="auto"
       ></audio>
 
        <audio
-      src="SoundEffects/lose.mp3"
+      src="sounds/error.mp3"
       class="sounds"
       id="sound-error"
+      preload="auto"
+      ></audio>
+
+      <audio
+      src="sounds/cardFlip.mp3"
+      class="sounds"
+      id="sound-cardFlip"
+      preload="auto"
+      ></audio>
+
+      <audio
+      src="sounds/game-finished.mp3"
+      class="sounds"
+      id="sound-finished"
       preload="auto"
       ></audio>
 
